@@ -16,7 +16,7 @@ const getUserChanDetails = async () => {
     }
 
     try {
-        const responseChannels = await fetch("https://gist.githubusercontent.com/harshuma28/b8746927189cc280f8d445fa9e33a120/raw/3d7dfa7e3733a3c109c8a127abbcb8c7cab9f9c3/fetcher.json");
+        const responseChannels = await fetch("https://gist.githubusercontent.com/harshuma28/b8746927189cc280f8d445fa9e33a120/raw/fetcher.json");
         const cData = await responseChannels.json();
 
         if (cData && cData.data && Array.isArray(cData.data.channels)) {
