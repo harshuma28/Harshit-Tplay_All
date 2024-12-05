@@ -39,7 +39,7 @@ const getUserChanDetails = async () => {
                     key_extracted: channel.key_extracted,
                     pssh: channel.pssh,
                     clearkey: channel.clearkeys ? JSON.stringify(channel.clearkeys[0].base64) : null,
-                    hma: hmacValue
+
                 };
                 obj.list.push(rearrangedChannel);
             });
